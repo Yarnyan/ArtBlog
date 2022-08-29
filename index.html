@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"> 
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="css/main.css" type="text/css" rel="stylesheet">
+    <title>Блог</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script> 
+        jQuery(document).ready(function() {
+          var btn = $('#button');  
+          $(window).scroll(function() {     
+            if ($(window).scrollTop() > 300) {
+               btn.addClass('show');
+             } else {
+               btn.removeClass('show');
+             }
+           });
+           btn.on('click', function(e) {
+             e.preventDefault();
+             $('html, body').animate({scrollTop:0}, '300');
+           });
+        });
+        $(document).ready(function() {
+            $('.header__burger').click(function(event) {
+                $('.header__burger,.header__menu').toggleClass('active');
+            });
+            $('.header__link').click(function(event) {
+                $('.header__menu,.header__burger,.header__menu').removeClass('active');
+            })
+        });
+    </script> 
+</head>
+<body>
+    <header class="header" data-aos="fade-down" data-aos-duration="2000"> <!-- Шапка -->
+        <div class="header__container">
+            <div class="header__body">
+                <div class="header__burger">
+                    <span></span>
+                </div>
+                <nav class="header__menu">
+                    <ul class="header__list">
+                        <li>
+                            <a href="#about" class="header__link">Обо мне</a>
+                        </li>
+                        <li>
+                            <a href="#MethodicalAssociation" class="header__link">Методическое обЪединение</a>
+                        </li>
+                        <li>
+                            <a href="#MethodBox" class="header__link">Методическая копилка</a>
+                        </li>
+                        <li>
+                            <a href="#Art" class="header__link">Мое творчество</a>
+                        </li>
+                        <li>
+                            <a href="#Contacts" class="header__link">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>  
+            </div>
+        </div>
+    </header>
+    <div class="animate__animated animate__zoomIn introduction IndentTop">
+        <div class="introduction__body MainText">
+            <div class="introduction__text">
+                Приветствую вас, друзья!
+                Я – учитель изобразительного искусства. 
+                В моем блоге вы можете ознакомиться с методическими материалами для подготовки и проведения уроков изобразительного искусства и другой актуальной информацией  по организации обучения.
+            </div>
+        </div>
+    </div>
+    <div class="aboutme IndentTop" id="about" data-aos="fade-right" data-aos-duration="2000"> <!--Обо мне -->
+        <div class="aboutme__body MainBody">
+            <div class="about__header MainHeader">
+                <div class="about__title title">
+                    Обо мне
+                </div>
+            </div>
+            <div class="about__content">
+                <div class="about__text">
+                    <div class="about__subtitle text">
+                        Я рада приветствовать вас, дорогие друзья!
+                        И кратко обо мне:
+                        В 2001 году закончила Уфимский художественно-гуманитарный колледж по
+                        специальности художник-оформитель, исполнитель дизайнерских работ.
+                        В 2006 году закончила Бирскую государственную социально-
+                        педагогическаую академию, художественно-графический факультет по
+                        специальности учитель изобразительного искусства.
+                        Работаю в МОАУ СОШ №2 г. Первоуральска Свердловской области с 2010
+                        года учителем изобразительного искусства.
+                        С 2018 года являюсь руководителем городского методического объединения
+                        учителей изобразительного искусства ГО Первоуральск.
+                        Опыт работы в сфере образования - 16 лет.
+                    </div>
+                </div>
+                <div class="about__img">
+                    <img class="about__img-style" src="img/ts.jpg" alt="Учитель">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="MethodicalAssociation IndentTop" id="MethodicalAssociation" data-aos="fade-left" data-aos-duration="2000"> <!-- Методическое объединение -->
+        <div class="MethodicalAssociation__body MainBody">
+            <div class="MethodicalAssociation__header MainHeade">
+                <div class="MethodicalAssociation__title title">Методическое объединение</div>
+            </div>
+            <div class="MethodicalAssociation__row">
+                <div class="MethodicalAssociation__column">
+                    <div class="MethodicalAssociation__column-text text">
+                        Актуальные вопросы в преподавании предметной обасти Искусство
+                    </div>
+                    <a class="MethodicalAssociation__column-item" href="ГМО блог/1.pdf">Cкачать</a>
+                </div>
+                <div class="MethodicalAssociation__column">
+                    <div class="MethodicalAssociation__column-text text">
+                        Влияние искусства на эмоциональное развитие школьников
+                    </div>
+                    <a class="MethodicalAssociation__column-item" href="ГМО блог/2.pptx">Cкачать</a>
+                </div>
+                <div class="MethodicalAssociation__column">
+                    <div class="MethodicalAssociation__column-text text">
+                        Воспитательный потенциал урока искусства
+                    </div>
+                    <a class="MethodicalAssociation__column-item" href="ГМО блог/4.ppt">Скачать</a>
+                </div>
+                <div class="MethodicalAssociation__column">
+                    <div class="MethodicalAssociation__column-text text">
+                        Игровые технологии в рамках урока Изо
+                    </div>
+                    <a class="MethodicalAssociation__column-item" href="ГМО блог/5.ppt">Скачать</a>
+                </div>
+                <div class="MethodicalAssociation__column">
+                    <div class="MethodicalAssociation__column-text text">
+                        ИЗОБРАЗИТЕЛЬНАЯ ГРАМОТНОСТЬ КАК ПЛАНИРУЕМЫЙ РЕЗУЛЬТАТ ОБУЧЕНИЯ
+                    </div>
+                    <a class="MethodicalAssociation__column-item" href="ГМО блог/6.pptx">Скачать</a>
+                </div>
+                <div class="MethodicalAssociation__column">
+                    <div class="MethodicalAssociation__column-text text">
+                        Изобразительная грамотность как планируемый результат
+                    </div>
+                    <a class="MethodicalAssociation__column-item" href="ГМО блог/7.pdf">Скачать</a>
+                </div>
+                <div class="MethodicalAssociation__column">
+                    <div class="MethodicalAssociation__column-text text">
+                        Основные направления деятельности ГМО в 2021-2022 учебном году в условиях формирования функциональной грамотности
+                    </div>
+                    <a class="MethodicalAssociation__column-item" href="ГМО блог/8.pptx">Скачать</a>
+                </div>
+                <div class="MethodicalAssociation__column">
+                    <div class="MethodicalAssociation__column-text text">
+                        Основные направления реализации  Концепции преподавания предметной области Искусство
+                    </div>
+                    <a class="MethodicalAssociation__column-item" href="ГМО блог/9.pptx">Скачать</a>
+                </div>
+                <div class="MethodicalAssociation__column">
+                    <div class="MethodicalAssociation__column-text text">
+                        Педагогические технологии как эффективная система
+                    </div>
+                    <a class="MethodicalAssociation__column-item" href="ГМО блог/10.pptx">Скачать</a>
+                </div>
+                <div class="MethodicalAssociation__column">
+                    <div class="MethodicalAssociation__column-text text">
+                        План работы ГМО учителей изобразительного искусства
+                    </div>
+                    <a class="MethodicalAssociation__column-item" href="ГМО блог/11.pptx">Скачать</a>
+                </div>
+                <div class="MethodicalAssociation__column">
+                    <div class="MethodicalAssociation__column-text text">
+                        Повышение качества образования через повышение уровня профессиональной компетентности учителя
+                    </div>
+                    <a class="MethodicalAssociation__column-item" href="ГМО блог/12.pptx">Скачать</a>
+                </div>
+                <div class="MethodicalAssociation__column">
+                    <div class="MethodicalAssociation__column-text text">
+                        Преемственность содержания уроков предметной области «Искусство»
+                    </div>
+                    <a class="MethodicalAssociation__column-item" href="ГМО блог/13.pptx">Скачать</a>
+                </div>
+                <div class="MethodicalAssociation__column">
+                    <div class="MethodicalAssociation__column-text text">
+                        Развитие проектной деятельности на уроках ИЗО, как средство эффективностиобразовательного процесса
+                    </div>
+                    <a class="MethodicalAssociation__column-item" href="ГМО блог/14.pptx">Скачать</a>
+                </div>
+                <div class="MethodicalAssociation__column">
+                    <div class="MethodicalAssociation__column-text text">
+                        Развитие творческой активности учащихся на уроках ИЗО
+                    </div>
+                    <a class="MethodicalAssociation__column-item" href="ГМО блог/15.pptx">Скачать</a>
+                </div>
+                <div class="MethodicalAssociation__column">
+                    <div class="MethodicalAssociation__column-text text">
+                        Развитие ФГ обучающихся основной школы на уроках ИЗО
+                    </div>
+                    <a class="MethodicalAssociation__column-item" href="ГМО блог/16.pdf">Скачать</a>
+                </div>
+                <div class="MethodicalAssociation__column">
+                    <div class="MethodicalAssociation__column-text text">
+                        Раскрытие индивидуальных особенностей обучающихся на уроках ИЗО
+                    </div>
+                    <a class="MethodicalAssociation__column-item" href="ГМО блог/17.pptx">Скачать</a>
+                </div>
+                <div class="MethodicalAssociation__column">
+                    <div class="MethodicalAssociation__column-text text">
+                        Система оценивания учебной деятельности при формировании функциональной грамотности
+                    </div>
+                    <a class="MethodicalAssociation__column-item" href="ГМО блог/18.pptx">Скачать</a>
+                </div>
+                <div class="MethodicalAssociation__column">
+                    <div class="MethodicalAssociation__column-text text">
+                        Формирующее оценивание как основа современного урока
+                    </div>
+                    <a class="MethodicalAssociation__column-item" href="ГМО блог/19.pptx">Скачать</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="wow animate__animated animate__fadeInRight animate__delay-0.5s MethodBox IndentTop" id="MethodBox" > <!-- Метод.Копилка -->
+        <div class="MethodBox__body MainBody">
+            <div class="MethodBox__header MainHeader">
+                <div class="MethodBox__title title">Методическая копилка</div>
+            </div>
+            <div class="MethodBox__content">
+                <div class="MethodBox__nav">
+                    <button class="tabs__nav-btn bat" type="button" data-tab="#tab_1">5 класс</button>
+                    <button class="tabs__nav-btn bat" type="button" data-tab="#tab_2">6 класс</button>
+                    <button class="tabs__nav-btn bat" type="button" data-tab="#tab_3">7 класс</button>
+                    <button class="tabs__nav-btn bat" type="button" data-tab="#tab_4">8 класс</button>
+                </div>
+            </div>
+            <div class="tabs__content">
+                <div class="tabs__item" id="tab_1">
+                    <div class="tabs_subtitle">
+                        5 Класс
+                    </div>
+                    <div class="tabs__item-download">
+                        <div class="tabs__item-text">
+                            Декоративно-прикладное искусство Др.Египта
+                            <a href="Метод. копилка/5 кл/1.ppt" class="bojepomogi">Cкачать презентацию</a>
+                        </div>
+                    </div>
+                    <div class="tabs__item-download">
+                        <div class="tabs__item-text">
+                            Зачем людям украшения
+                            <a href="Метод. копилка/5 кл/2.pptx" class="bojepomogi">Cкачать презентацию</a>
+                        </div>
+                    </div>
+                    <div class="tabs__item-download">
+                        <div class="tabs__item-text">
+                            ЛОГОТИПЫ
+                            <a href="Метод. копилка/5 кл/3.pptx" class="bojepomogi">Cкачать презентацию</a>
+                        </div>
+                    </div>
+                    <div class="tabs__item-download">
+                        <div class="tabs__item-text">
+                            Одежда говорит о человеке
+                            <a href="Метод. копилка/5 кл/4.pptx" class="bojepomogi">Cкачать презентацию</a>
+                        </div>
+                    </div>
+                    <div class="tabs__item-download">
+                        <div class="tabs__item-text">
+                            Современное выставочное искусство
+                            <a href="Метод. копилка/5 кл/5.pptx" class="bojepomogi">Cкачать презентацию</a>
+                        </div>
+                    </div>
+                    <div class="tabs__item-download">
+                        <div class="tabs__item-text">
+                            Ты - сам мастер
+                            <a href="Метод. копилка/5 кл/6.pptx" class="bojepomogi">Cкачать презентацию</a>
+                        </div>
+                    </div>
+                    <div class="tabs__item-download">
+                        <div class="tabs__item-text">
+                            Художественная ковка
+                            <a href="Метод. копилка/5 кл/7.ppt" class="bojepomogi">Cкачать презентацию</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="tabs__item" id="tab_2">
+                    <div class="tabs_subtitle">
+                        6 Класс
+                    </div>
+                    <div class="tabs__item-download">
+                        <div class="tabs__item-text">
+                            Линия и ее выразительные возможности
+                            <a href="Метод. копилка/6 кл/1.ppt" class="bojepomogi">Cкачать презентацию</a>
+                        </div>
+                    </div>
+                    <div class="tabs__item-download">
+                        <div class="tabs__item-text">
+                            Образ человека - главная тема в искусстве
+                            <a href="Метод. копилка/6 кл/2.pptx" class="bojepomogi">Cкачать презентацию</a>
+                        </div>
+                    </div>
+                    <div class="tabs__item-download">
+                        <div class="tabs__item-text">
+                            Пейзаж-настроения
+                            <a href="Метод. копилка/6 кл/3.pptx" class="bojepomogi">Cкачать презентацию</a>
+                        </div>
+                    </div>
+                    <div class="tabs__item-download">
+                        <div class="tabs__item-text">
+                            Понятие формы
+                            <a href="Метод. копилка/6 кл/4.pptx" class="bojepomogi">Cкачать презентацию</a>
+                        </div>
+                    </div>
+                    <div class="tabs__item-download">
+                        <div class="tabs__item-text">
+                            Правила построения линейной перспективы. Воздушная перспектива
+                            <a href="Метод. копилка/6 кл/5.ppt" class="bojepomogi">Cкачать презентацию</a>
+                        </div>
+                    </div>
+                    <div class="tabs__item-download">
+                        <div class="tabs__item-text">
+                            Реальность и фантазия в творчестве художника
+                            <a href="Метод. копилка/6 кл/6.pptx" class="bojepomogi">Cкачать презентацию</a>
+                        </div>
+                    </div>
+                    <div class="tabs__item-download">
+                        <div class="tabs__item-text">
+                            Роль цвета в портрете
+                            <a href="Метод. копилка/6 кл/7.pptx" class="bojepomogi">Cкачать презентацию</a>
+                        </div>
+                    </div>
+                    <div class="tabs__item-download">
+                        <div class="tabs__item-text">
+                            Сатирические образы человека
+                            <a href="Метод. копилка/6 кл/8.pptx" class="bojepomogi">Cкачать презентацию</a>
+                        </div>
+                    </div>
+                    <div class="tabs__item-download">
+                        <div class="tabs__item-text">
+                            СКУЛЬПТУРА
+                            <a href="Метод. копилка/6 кл/9.pptx" class="bojepomogi">Cкачать презентацию</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="tabs__item" id="tab_3">
+                    <div class="tabs_subtitle">
+                        7 Класс
+                    </div>
+                    <div class="tabs__item-download">
+                        <div class="tabs__item-text">
+                            Автопортет на каждый день
+                            <a href="Метод. копилка/7 кл/1.pptx" class="bojepomogi">Cкачать презентацию</a>
+                        </div>
+                    </div>
+                    <div class="tabs__item-download">
+                        <div class="tabs__item-text">
+                            Дизайн и архитектура сада
+                            <a href="Метод. копилка/7 кл/2.pptx" class="bojepomogi">Cкачать презентацию</a>
+                        </div>
+                    </div>
+                    <div class="tabs__item-download">
+                        <div class="tabs__item-text">
+                            Дизайн интерьера
+                            <a href="Метод. копилка/7 кл/3.pptm" class="bojepomogi">Cкачать презентацию</a>
+                        </div>
+                    </div>
+                    <div class="tabs__item-download">
+                        <div class="tabs__item-text">
+                            Дизайн современной одежды
+                            <a href="Метод. копилка/7 кл/4.pptx" class="bojepomogi">Cкачать презентацию</a>
+                        </div>
+                    </div>
+                    <div class="tabs__item-download">
+                        <div class="tabs__item-text">
+                            Мода, культура и ты
+                            <a href="Метод. копилка/7 кл/5.ppt" class="bojepomogi">Cкачать презентацию</a>
+                        </div>
+                    </div>
+                    <div class="tabs__item-download">
+                        <div class="tabs__item-text">
+                            Основы композиции в конструктивных искусствах
+                            <a href="Метод. копилка/7 кл/6.pptx" class="bojepomogi">Cкачать презентацию</a>
+                        </div>
+                    </div>
+                    <div class="tabs__item-download">
+                        <div class="tabs__item-text">
+                            Прямые линии и организация пространства
+                            <a href="Метод. копилка/7 кл/7.ppt" class="bojepomogi">Cкачать презентацию</a>
+                        </div>
+                    </div>
+                    <div class="tabs__item-download">
+                        <div class="tabs__item-text">
+                            Свободные формы. Линии и тоновые пятна
+                            <a href="Метод. копилка/7 кл/8.ppt" class="bojepomogi">Cкачать презентацию</a>
+                        </div>
+                    </div>
+                    <div class="tabs__item-download">
+                        <div class="tabs__item-text">
+                            СКУЛЬПТУРА
+                            <a href="Метод. копилка/7 кл/9.pptx" class="bojepomogi">Cкачать презентацию</a>
+                        </div>
+                    </div>
+                    <div class="tabs__item-download">
+                        <div class="tabs__item-text">
+                            Цвет – элемент композиционного творчества
+                            <a href="Метод. копилка/7 кл/10.pptx" class="bojepomogi">Cкачать презентацию</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="tabs__item" id="tab_4">
+                    <div class="tabs_subtitle">
+                        8 Класс
+                    </div>
+                    <div class="tabs__item-text">
+                        Изображение в театре и кино
+                        <a href="Метод. копилка/8 кл/1.ppt" class="bojepomogi">Cкачать презентацию</a>
+                    </div>
+                    <div class="tabs__item-text">
+                        Кинонаблюдение и Видеоэтюд
+                        <a href="Метод. копилка/8 кл/2.pptx" class="bojepomogi">Cкачать презентацию</a>
+                    </div>
+                    <div class="tabs__item-text">
+                        Мой дом - мой образ жизни
+                        <a href="Метод. копилка/8 кл/3.pptx" class="bojepomogi">Cкачать презентацию</a>
+                    </div>
+                    <div class="tabs__item-text">
+                        Репортаж и интервью
+                        <a href="Метод. копилка/8 кл/4.pptx" class="bojepomogi">Cкачать презентацию</a>
+                    </div>
+                    <div class="tabs__item-text">
+                        Роль визуально-зрелищных искусств
+                        <a href="Метод. копилка/8 кл/5.pptx" class="bojepomogi">Cкачать презентацию</a>
+                    </div>
+                    <div class="tabs__item-text">
+                        Современные формы экранного языка
+                        <a href="Метод. копилка/8 кл/6.pptx" class="bojepomogi">Cкачать презентацию</a>
+                    </div>
+                    <div class="tabs__item-text">
+                        Сценография - особый вид художественного творчества
+                        <a href="Метод. копилка/8 кл/7.ppt" class="bojepomogi">Cкачать презентацию</a>
+                    </div>
+                    <div class="tabs__item-text">
+                        СЦЕНОГРАФИЯ-искусство и производство
+                        <a href="Метод. копилка/8 кл/8.pptx" class="bojepomogi">Cкачать презентацию</a>
+                    </div>
+                    <div class="tabs__item-text">
+                        Театральное искусство и художник
+                        <a href="Метод. копилка/8 кл/9.pptx" class="bojepomogi">Cкачать презентацию</a>
+                    </div>
+                    <div class="tabs__item-text">
+                        Телевизионная  документалистика
+                        <a href="Метод. копилка/8 кл/10.pptx" class="bojepomogi">Cкачать презентацию</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="wow animate__animated animate__fadeInLeft animate__delay-1 sArt IndentTop" id="Art"> <!-- Творчество -->
+        <div class="Art__body MainBody ArtBody">
+            <div class="Art__header MainHeader">
+                <div class="Art__title title">Мое творчество</div>
+            </div>
+            <div class="swiper Art__content">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="image-slider__image">
+                            <img src="img/01.jpg" alt="Картинка">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="image-slider__image">
+                            <img src="img/02.jpg" alt="Картинка">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="image-slider__image">
+                            <img src="img/03.jpg" alt="Картинка">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="image-slider__image">
+                            <img src="img/04.jpg" alt="Картинка">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="image-slider__image">
+                            <img src="img/05.jpg" alt="Картинка">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="image-slider__image">
+                            <img src="img/06.jpg" alt="Картинка">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-scrollbar"></div>
+            </div>
+        </div>
+    </div>
+    <div class="wow animate__animated animate__fadeInUp animate__delay-1.5s Contacts IndentTop" id="Contacts">
+        <div class="Contacts__body MainBody">
+            <div class="Contacts__header MainHeader">
+                <div class="Contacts__title title">Контакты</div>
+            </div>
+        </div>
+    </div>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="text/javascript" src="index.js"></script>
+<a id="button"></a> 
+</body>
+</html>
