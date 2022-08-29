@@ -79,7 +79,6 @@ html {
 }
 
 body {
-  height: 100%;
   line-height: 1;
   font-family: "Caveat";
 }
@@ -125,6 +124,9 @@ body {
 }
 
 @media (max-width: 767px) {
+  .header {
+    background-size: 100% 100% !important;
+  }
   .header__body {
     height: 50px;
   }
@@ -179,7 +181,7 @@ body {
     bottom: 0;
   }
   .header__list {
-    display: block;
+    display: inline-block;
   }
   .header__list li {
     margin: 20px 0px 20px 0px;
@@ -216,7 +218,6 @@ body {
   background-repeat: no-repeat;
   background-size: 100%;
   position: relative;
-  width: 100%;
   top: 0;
   left: 0;
   z-index: 50;
@@ -284,6 +285,7 @@ header {
 }
 
 #button {
+  position: fixed;
   display: inline-block;
   background-color: #FF9800;
   width: 50px;
@@ -291,11 +293,10 @@ header {
   text-align: center;
   border-radius: 4px;
   margin: 30px;
-  position: fixed;
   bottom: 30px;
   right: 30px;
   transition: background-color 0.3s;
-  z-index: 1000;
+  z-index: 1;
 }
 
 #button:hover {
@@ -315,6 +316,10 @@ header {
   font-size: 2em;
   line-height: 50px;
   color: #fff;
+}
+
+.switchoff {
+  display: none;
 }
 
 .MethodicalAssociation__body {

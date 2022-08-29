@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"> 
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
@@ -31,15 +30,17 @@
         $(document).ready(function() {
             $('.header__burger').click(function(event) {
                 $('.header__burger,.header__menu').toggleClass('active');
+                $('#button').toggleClass('switchoff')
             });
             $('.header__link').click(function(event) {
                 $('.header__menu,.header__burger,.header__menu').removeClass('active');
+                $('#button').toggleClass('switchoff')
             })
         });
     </script> 
 </head>
 <body>
-    <header class="header" data-aos="fade-down" data-aos-duration="2000"> <!-- Шапка -->
+    <header class="header"> <!-- Шапка -->
         <div class="header__container">
             <div class="header__body">
                 <div class="header__burger">
@@ -76,7 +77,7 @@
             </div>
         </div>
     </div>
-    <div class="aboutme IndentTop" id="about" data-aos="fade-right" data-aos-duration="2000"> <!--Обо мне -->
+    <div class="aboutme IndentTop" id="about"> <!--Обо мне -->
         <div class="aboutme__body MainBody">
             <div class="about__header MainHeader">
                 <div class="about__title title">
@@ -106,7 +107,7 @@
             </div>
         </div>
     </div>
-    <div class="MethodicalAssociation IndentTop" id="MethodicalAssociation" data-aos="fade-left" data-aos-duration="2000"> <!-- Методическое объединение -->
+    <div class="MethodicalAssociation IndentTop" id="MethodicalAssociation" > <!-- Методическое объединение -->
         <div class="MethodicalAssociation__body MainBody">
             <div class="MethodicalAssociation__header MainHeade">
                 <div class="MethodicalAssociation__title title">Методическое объединение</div>
@@ -506,7 +507,6 @@
         </div>
     </div>
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script type="text/javascript" src="index.js"></script>
 <a id="button"></a> 
 </body>

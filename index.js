@@ -10,14 +10,11 @@ document.addEventListener('DOMContentLoaded', function() {
             delay: 2000,
         },
     })
-
-AOS.init();
 new WOW().init();
  }, false);
 
  const apps = document.querySelectorAll(".tabs__nav-btn");
 const tabsItems = document.querySelectorAll(".tabs__item");
-
 apps.forEach(onTabClick);
 
 function onTabClick(item) {
