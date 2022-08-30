@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
+    
     if(document.documentElement.clientWidth < 500) {
         console.log("penis")
         new Swiper('.swiper', {

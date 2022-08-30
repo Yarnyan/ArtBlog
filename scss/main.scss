@@ -144,8 +144,8 @@ body {
     text-align: center;
     position: relative;
     .about__img-style {
-      width: 200px; 
-      height: 125px;
+      width: 250px; 
+      height: 200px;
       border-radius: 25px;
     }
   }
@@ -324,8 +324,24 @@ header {
   color: #fff; 
 } 
 
+.MethodicalAssociation__mainColor {
+  color: hsl(0, 90%, 60%);
+}
+
+.MethodBox__mainColor {
+  color: hsl(36, 100%, 55%);
+}
+
+.Art__mainColor {
+  color: #24f81ce5;
+}
+
 .switchoff {
   display: none;
+}
+
+.Contacts__mainColor {
+  color: #29baf3
 }
 
  .MethodicalAssociation__body {
@@ -357,7 +373,7 @@ header {
     height: 150px;
     padding: 0px 15px;
   }
-  
+
   .title {
     font-size: 34px;
     font-weight: 500;
@@ -382,7 +398,7 @@ header {
   }
 
 .Art__content {
-    height: 250px;
+    height: 325px;
     margin-top: 25px;
 }
 
@@ -402,13 +418,13 @@ header {
 }
 
 .image-slider__image img {
-  width: 400px;
-  height: 200px;
+  width: 450px;
+  height: 300px;
   max-width: 100%;
 }
 
 .swiper-horizontal>.swiper-scrollbar {
-  top: 247px !important;
+  top: 320px !important;
 }
 
 .MethodicalAssociation__column-item {
@@ -505,9 +521,13 @@ header {
 .tabs__item-text {
   max-width: 688px;
   color: #868585;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 500;
   line-height: 25.89px;
+}
+
+.about__mainColor {
+  color: hsl(69, 82%, 60%);
 }
 
 .bojepomogi {
@@ -522,4 +542,14 @@ header {
 .MethodBox__nav {
   width: 500px;
   margin: 0 auto;
+}
+
+.all__text {
+  max-width: 688px;
+  color: #868585;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 25.89px;
+  margin: 0px auto;
 }
