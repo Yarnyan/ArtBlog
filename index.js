@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 el: '.swiper-scrollbar',
                 type: 'progressbar'
             },
-            slidesPerView: 2,
+            slidesPerView: 1,
             loop: true,
             autoplay: {
                 delay: 2000,
